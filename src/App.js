@@ -1,10 +1,20 @@
-
 import './App.css';
+
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Home from './pages/Home';
+import Redirect from './pages/Redirect';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <>
-      <h1>jk</h1>
+    <Navbar/>
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home />}/>
+          <Route path='/:slug' element={<Redirect />} />
+        </Routes>
+      </Router>
     </>
   );
 }

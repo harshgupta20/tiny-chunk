@@ -1,0 +1,19 @@
+#navbar{
+    width: 100%;
+}
+#nav-body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #fff;
+}
+#nav-title{
+    display: flex;
+    flex-direction: column;
+}
+#nav-p1{
+    font-size: 40px;
+    font-weight: bold;
+}
