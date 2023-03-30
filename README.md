@@ -1,4 +1,4 @@
-# Ecommmerce App
+# Tiny Chunk
 
 To view the project live [Click Here](https://url-chunk.web.app/).
 
