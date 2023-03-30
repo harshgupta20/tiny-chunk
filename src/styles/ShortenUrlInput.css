@@ -8,3 +8,7 @@
 #short-url-copy{
     margin: 30px;
 }
+#short-input{
+    padding: 10px;
+    outline: none;
+}
