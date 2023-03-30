@@ -24,7 +24,7 @@
  cursor: pointer;
 }
 #short-btn1:hover{
-    transform: scale(0.9);  
+    transform: scale(1.05);  
 }
 #short-url-copy{
     margin: 30px;
