@@ -29,6 +29,7 @@ const ShortenUrlInput = () => {
 
     const handleCopyUrl = () => {
         navigator.clipboard.writeText(`${ShortenUrl}`);
+        alert("Link Copied");
     }
 
     return (
@@ -36,12 +37,16 @@ const ShortenUrlInput = () => {
             <div id="short-url">
                 <div id="short-url-form">
                     <input id="short-input" type="text" onChange={(e) => setUrl(e.target.value)} placeholder="Enter URL here..." />
-                    <button onClick={handleUrlShorten} >Submit</button>
+                    <button id="short-btn1" onClick={handleUrlShorten} >Create Link</button>
                 </div>
                 <hr style={{borderBottom:'1px solid black', width:'100%', margin:'30px'}} />
                 <div id="short-url-copy">
-                    <h1>{ShortenUrl}</h1>
-                    <button onClick={handleCopyUrl}>Copy</button>
+                    {
+                        ShortenUrl && <h1 id="short-h1">{ShortenUrl}</h1>
+                    }
+                    {
+                        ShortenUrl && <button id="short-btn2" onClick={handleCopyUrl}>Copy to Clipboard</button>
+                    }
                 </div>
             </div>
         </>

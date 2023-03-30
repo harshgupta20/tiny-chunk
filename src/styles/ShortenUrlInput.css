@@ -5,10 +5,38 @@
     justify-content: center;
     align-items: center;
 }
-#short-url-copy{
-    margin: 30px;
+#short-url-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 #short-input{
+    width: 50%;
     padding: 10px;
     outline: none;
+}
+#short-btn1{
+    margin-left: 10px;   
+    padding: 10px 30px;
+    font-size: larger;
+    background-color: #262A56;
+    color: #fff;
+ cursor: pointer;
+}
+#short-btn1:hover{
+    transform: scale(0.9);  
+}
+#short-url-copy{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+#short-btn2{
+    padding: 10px 20px;
+    font-size: larger;
+    margin-top: 20px;
+    background-color: #B8621B;
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
